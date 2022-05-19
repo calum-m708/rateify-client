@@ -1,110 +1,53 @@
-# Rateify
+# Project 3 - 'Rateify'
 
-## Project Overview
-   _Rateify_ is a full stack MERN application (MongoDB, Express, React and Node) .The site allows users to discover and rate music, post their own reviews about a release, and upload a release for others to comment on. The app also allows users to listen to samples of the posted music by listening to the release's associated Spotify playlist .  _Rateify_ was a week-long group project in which I worked with [Calum MacEachen](https://github.com/calum-m708) and [Omar Al-Sanea](https://github.com/omaralsanea) to create our finished site.
+Rateify is a full-stack MERN (MongoDB, Express, React, Node) application based around the idea of users reviewing and discovering music. Users can browse through the albums and singles added by other users, or add their own. I made this as my third project for General Assembly's Software Engineering Immersive course, as part of a group with **[JT Black](https://github.com/JT-Black/)** and **[Omar Al-Saena](https://github.com/omaralsanea)**. This project was my introduction to building an API.
+
+**Duration** - 7 days
+
+**[Link](https://rateify.netlify.app/)**
+
+## Technologies Used
+
+**Front End** - HTML, CSS, React.js, Bulma, SASS
+
+**Back End** - Node.js, Express, MongoDB, Mongoose
+
+**Development** - Excalidraw, Git, GitHub, Postman, NPM, Netlify, Heroku, Trello
 
 ## The Brief
+
 - Build a full-stack application by making a back-end and a front-end.
 - Use an Express API to serve your data from a Mongo database.
 - Consume your API with a separate front-end built with React. 
 - Be a complete product with multiple relationships and CRUD functionality.
-- Implement wireframes that show the user journey and functionality of the application.
 - Be deployed online so it’s publicly accessible.
 
-## Concept
-   Our first discussions centred around the fact that we wanted to build something that would be useful to people and that was different to other applications that we had built before. We focused on music as it was an area that we were all interested in and decided to create a site that blended musical content with user interaction for music fans looking to share their favorite releases and opinions about the music and artists who created it.
+## Development Process
 
-## Application Walkthrough
-### Home  Page
-<p align="center">
-  <img src="./src/img/home.png" width="96%"  />
-</p>
+After deciding on a concept we were all interested in, we started by planning out the app in Excalidraw.
 
-### Artist Index
-<p align="center">
-	<img src="./src/img/artists.png" width="96%"  />
-</p>
+![Excalidraw](./readme-screenshots/excalidraw.png)
 
-### Release Index
-<p align="center">
-	<img src="./src/img/releases.png" width="96%"  />
-</p>
+After this, we put together a rough to-do list in Trello, with certain tasks marked as 'stretch goals', meaning tasks we didn't consider essential for our MVP (Minimum Viable Product).
 
-### Artist Page
-<p align="center">
-	<img src="./src/img/artist.png" width="96%"  />
-</p>
+![Trello](./readme-screenshots/trello.PNG)
 
-### Release Page
-<p align="center">
-	<img src="./src/img/release.png" width="96%"  />
-</p>
+We mostly worked together using the VSCode extension Live Share. When splitting up to do work individually, we would make git branches and merge them together once the work was complete.
 
-### Register
-<p align="center">
-	<img src="./src/img/register.png" width="96%"  />
-</p>
+## App Overview
 
-### Login
-<p align="center">
-	<img src="./src/img/login.png" width="96%"  />
-</p>
+The screenshot below shows the home page of the app.
 
-### About
-<p align="center">
-	<img src="./src/img/about.png" width="96%"  />
-</p>
+![Home Page](./readme-screenshots/home.png)
 
 
-## Tech Stack
-### Front End
-- React Framework (Single Page Application)
-- API Handling: Axios
-- Pure CSS with Sass
-- React-Router-Dom
+## Technical Overview
 
-### Back End
-- Server: Node.js & Express
-- Database: MongoDB & Mongoose
-- Safeguarding from injection attacks: Express Mongo Sanitize
-- Password Encryption: Bcrypt
-- Authentication: JSON Web Token (JWT)
+## Design Notes
 
-### Development
-- Git, GitHub
-- Postman for API testing
-- Excalidraw for wireframing
-- Npm
-- Deployment:
-  - Front End: Netlify
-  - Back End: Heroku (& Mongo Atlas)
+This app uses a combination of Bulma and CSS/SASS
 
-## Architecture:
-### Front End: 
-  - React Components using Hooks for state management and handling side effects
-  - Bulma CSS framework for styling
-  - Single Page Application (`react-router-dom`) using `Link`, `useNavigate`, `useLocation` and `useParams`
-### Back End:
-  - All security checks done in the back end:
-    - Email validation
-    - Password validation
-  - Secure routing middleware
-  - Error handling middleware
-  - Interlinked schema models in MongoDB
+## Known bugs, other issues, and scope for improvement.
 
-## Featured Code Snippets
-### Front End
-
-
-
-
-### Back End
-
-
-
-## Challenges and Wins
-
-Adding releases requires using a spotify link currently. An unsolved issue we had was a better way to add releases and artists that would validate, unfortunately we ran out of time. We wanted to add an average star rating and reviews section as well, however the time constraint limited what we were able to add with our deadline. We were able to add carousels on the homepage for a bit of fun movement.
-
-
+## Wins and Key Learnings
 
