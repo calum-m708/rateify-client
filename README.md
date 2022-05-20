@@ -8,7 +8,7 @@ Rateify is a full-stack MERN (MongoDB, Express, React, Node) application based a
 
 ## Technologies Used
 
-**Front End** - HTML, CSS, React.js, Bulma, SASS
+**Front End** - HTML, CSS, JavaScript, React.js, Bulma, SASS
 
 **Back End** - Node.js, Express, MongoDB, Mongoose, JSON Web Token (JWT)
 
@@ -60,11 +60,45 @@ There are also pages that show all releases and all artists, accessible from the
 
 ## Technical Overview
 
+### Backend
+
+I spent the first few days of development on the backend, building the models and controllers for users, artists, releases and reviews. See the screenshot below for the Release Schema. 
+
+![Release Schemas](./readme-screenshots/releaseSchemas.PNG)
+
+We built in a many to one relationship between the Release and Artists, as well as adding a virtual, which calculates the average rating, based on all the reviews/ratings added to the release.
+
+For the controllers, we built in the basic CRUD (Create, Read, Update, Destroy) Operations into our controllers.
+
+![Release Controller](./readme-screenshots/releaseController.PNG)
+
+After building the Models and Controllers, we set up the router to access the data via the controllers.
+
+![Router](./readme-screenshots/router.PNG)
+
+### Frontend
+
+Once we were happy with the backend, we focused on building the frontend. The first step was to create functions that could access the data from the API, using Axios.
+
+![Axios Functions](./readme-screenshots/releaseaxios.PNG)  
+
+After that, we started building the components of the frontend. We had a main components folder, and a few subfolders separate for Artist pages and Release pages, to keep things tidier.
+
+![Components Folder](./readme-screenshots/componentsfolder.PNG)
+
+One of the components I worked on was the Add Release page. I built a form for the user to input information, using the external library **React Select** for the Genres, which allowed users to select multiple genres for the same release.
+
+![Add Release](./readme-screenshots/AddRelease.PNG)
+
+![Select Genres](./readme-screenshots/selectgenres.PNG)
+
+Another page that I worked a lot on was the front page of the app. This utilised 
+
 ## Design Notes
 
 This app uses the CSS framework Bulma as the basis for its styling, with some CSS written on top of it. One of our goals in our original whiteboard was to have a toggle for day mode and night mode, but we unfortunately ran out of time to implement this. 
 
-It was important to us to have quite a minimalist visual style, as we knew we would be dealing with pictures of artists and albums that could clash with the visual style we chose to implement. 
+Quite a lot of time was spent on the visual style of the app, adjusting margins and shades to get the exact style we were after. It was important to us to have quite a minimalist visual style, as we knew we would be dealing with pictures of artists and albums that could clash with the visual style we chose to implement. 
 
 ## Known bugs, other issues, and scope for improvement.
 
