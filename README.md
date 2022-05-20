@@ -92,8 +92,6 @@ One of the components I worked on was the Add Release page. I built a form for t
 
 ![Select Genres](./readme-screenshots/selectgenres.PNG)
 
-Another page that I worked a lot on was the front page of the app. This utilised 
-
 ## Design Notes
 
 This app uses the CSS framework Bulma as the basis for its styling, with some CSS written on top of it. One of our goals in our original whiteboard was to have a toggle for day mode and night mode, but we unfortunately ran out of time to implement this. 
