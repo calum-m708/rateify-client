@@ -32,7 +32,7 @@ After this, we put together a rough to-do list in Trello, with certain tasks mar
 
 ![Trello](./readme-screenshots/trello.PNG)
 
-We knew that we wanted to populate the app with a decent amount of seed data, so when it was deployed there was enough there for the app to feel 'alive'. Before we even started coding, we decided that whenever any of us had spare time, we should try put together seed data in a shared Google Sheet. We used a `join()` in the Google Sheet to get this data into a form that could easily be copied and pasted into our code.
+We knew that we wanted to populate the app with a decent amount of seed data, so when it was deployed there was enough there for the app to feel 'alive'. Before we even started coding, we decided that whenever any of us had spare time, we should try to put together seed data in a shared Google Sheet. We used a `join()` in the Google Sheet to get this data into a form that could easily be copied and pasted into our code.
 
 ![Google Sheet Seed Data](./readme-screenshots/seeddata.PNG)
 
@@ -52,7 +52,7 @@ From there, you can click on the artist's name, and be taken to their Artist pag
 
 ![Artist Page](./readme-screenshots/artist.png)
 
-There are also pages that show all releases and all artists, accessible from the Navbar
+There are also pages that show all releases and all artists, accessible from the Navbar.
 
 ![Artists Index](./readme-screenshots/artists.png)
 
